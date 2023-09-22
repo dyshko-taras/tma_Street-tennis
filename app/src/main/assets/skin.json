@@ -1,0 +1,85 @@
+{
+com.badlogic.gdx.graphics.g2d.BitmapFont: {
+	f32: {
+		file: f32.fnt
+		scaledSize: -1
+		markupEnabled: false
+		flip: false
+	}
+	f40: {
+		file: f40.fnt
+		scaledSize: -1
+		markupEnabled: false
+		flip: false
+	}
+	f_blue: {
+		file: f_blue.fnt
+		scaledSize: -1
+		markupEnabled: false
+		flip: false
+	}
+	f_red: {
+		file: f_red.fnt
+		scaledSize: -1
+		markupEnabled: false
+		flip: false
+	}
+	ff: {
+		file: ff.fnt
+		scaledSize: -1
+		markupEnabled: false
+		flip: false
+	}
+}
+com.badlogic.gdx.graphics.Color: {
+	RGBA_0_0_0_255: {
+		r: 0
+		g: 0
+		b: 0
+		a: 1
+	}
+	RGBA_0_80_174_255: {
+		r: 0
+		g: 0.3137255
+		b: 0.68235296
+		a: 1
+	}
+	RGBA_243_1_22_255: {
+		r: 0.9529412
+		g: 0.003921569
+		b: 0.08627451
+		a: 1
+	}
+	RGBA_90_225_136_255: {
+		r: 0.3529412
+		g: 0.88235295
+		b: 0.53333336
+		a: 1
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
+	default: {
+		font: f40
+	}
+	f40: {
+		font: f40
+	}
+	f32: {
+		font: f32
+	}
+	f_red: {
+		font: f_red
+	}
+	f_blue: {
+		font: f_blue
+	}
+	ff: {
+		font: ff
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextTooltip$TextTooltipStyle: {
+	default: {
+		label: default
+	}
+}
+}

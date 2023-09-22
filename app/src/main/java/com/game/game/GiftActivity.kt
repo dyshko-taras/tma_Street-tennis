@@ -25,7 +25,8 @@ class GiftActivity : AppCompatActivity() {
     private var TAG = "GiftActivity1"
     private lateinit var giftView: WebView
     private lateinit var myProgressBar: ProgressBar
-    private var site = "https://splindlewort.com"
+//    private var site = "https://drblorax.com"
+    private var site = "https://drblorax.com"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,7 +47,7 @@ class GiftActivity : AppCompatActivity() {
         _is200.observe(this) {
             Log.d(TAG, it.toString())
             if (it) giftView.loadUrl(site)
-//            else LauncherGame.move(this)
+            else LauncherGame.move(this)
         }
     }
 
@@ -67,7 +68,6 @@ class GiftActivity : AppCompatActivity() {
 
     private fun goBack(webView: WebView) {
         if (webView.canGoBack()) webView.goBack()
-        else finishAffinity()
     }
 
     override fun onBackPressed() {

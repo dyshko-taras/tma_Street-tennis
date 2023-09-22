@@ -12,16 +12,25 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+//        LauncherGame.move(this)
+//        GiftActivity.move(this)
 
         if (isInternetWorking()) {
             if (SharedPreferencesM.getIsGame(this) != null) {
-//                SharedPreferencesM.getIsGame(this) == "true" ? LauncherGame.launch(this) : GiftActivity.launch(this)
+                when {
+                    SharedPreferencesM.getIsGame(this) == "true" -> {
+                        LauncherGame.move(this)
+                    }
+                    else -> {
+                        GiftActivity.move(this)
+                    }
+                }
             } else {
                 GiftActivity.move(this)
                 SharedPreferencesM.saveIsGame(this, false)
             }
         } else {
-//            LauncherGame.move(this)
+            LauncherGame.move(this)
             SharedPreferencesM.saveIsGame(this, true)
         }
     }

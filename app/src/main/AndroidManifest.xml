@@ -30,6 +30,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LauncherGame"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            />
     </application>
 
 </manifest>
